@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<h1> {{title}}  </h1>
+  <hr />
+  <div *ngFor="let p of profils">
+    <span>{{p.name}}</span> | <span>{{p.birthday}}</span><button (click)="selectedProfil = p" >Select</button>
+  </div>
+<hr/>
+<app-profil [profil]="selectedProfil"></app-profil>

@@ -1,0 +1,16 @@
+<h3>
+  Edit profil
+</h3>
+
+<div *ngIf="profil">
+  <div>
+    <label for="name">Name</label>
+    <input type="text" id="name" [(ngModel)]="profil.name" />
+  </div>
+
+  <div>
+    <label for="birthday">Birthday</label>
+    <input type="date" id="birthday" [ngModel]="profil.birthday | formatDate" (ngModelChange)="onChange($event)"  />
+    <!-- -input type="date" id="birthday" [(ngModel)]="profil.birthday" /  -->
+  </div>
+</div>
