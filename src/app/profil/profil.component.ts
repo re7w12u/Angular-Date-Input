@@ -20,7 +20,8 @@ export class ProfilComponent implements OnInit {
   }
 
   onChange($event){
-    this.profil.birthday = moment($event, moment.ISO_8601).toDate();
+    console.log($event);    
+    this.profil.birthday = new NgDate1(moment($event, moment.ISO_8601).toDate());
   }
 
 }

@@ -10,7 +10,7 @@
 
   <div>
     <label for="birthday">Birthday</label>
-    <input type="date" id="birthday" [ngModel]="profil.birthday | formatDate" (ngModelChange)="onChange($event)"  />
-    <!-- -input type="date" id="birthday" [(ngModel)]="profil.birthday" /  -->
+    <!-- input type="date" id="birthday" [ngModel]="profil.birthday | formatDate" (ngModelChange)="onChange($event)"  /-->
+    <input type="date" id="birthday" [(ngModel)]="profil.birthday.dateInput" />
   </div>
 </div>
