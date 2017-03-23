@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { ProfilModel } from './model/profilModel'
-import { NgDate } from './model/dateModel'
 
 @Injectable()
 export class ProfilService {
@@ -20,7 +19,6 @@ export class ProfilService {
     let p = new ProfilModel();
     p.name = "Julien";
     p.birthday = new Date(1976,2,17);
-    //p.birthday.dateInput = ;
     this.profils.push(p);
 
   }

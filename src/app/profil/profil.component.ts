@@ -1,6 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { ProfilModel } from '../model/profilModel';
-import { NgDate, NgDate1 } from '../model/dateModel';
 import * as moment from 'moment';
 
 @Component({
