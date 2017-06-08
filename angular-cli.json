@@ -18,9 +18,14 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
+        "../scripts/jquery-ui-1.12.1/jquery-ui.min.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../scripts/jquery-ui-1.12.1/external/jquery/jquery.js",
+        "../scripts/jquery-ui-1.12.1/jquery-ui.min.js",
+        "../scripts/jquery-ui-1.12.1/external/datepicker-fr.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",

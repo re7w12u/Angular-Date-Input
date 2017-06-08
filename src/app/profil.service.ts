@@ -18,7 +18,7 @@ export class ProfilService {
 
     let p = new ProfilModel();
     p.name = "Julien";
-    p.birthday = new Date(1976,2,17);
+    p.birthday = new Date(1976,2,5);
     this.profils.push(p);
 
   }
