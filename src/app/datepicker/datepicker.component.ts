@@ -30,17 +30,5 @@ export class DatepickerComponent implements OnInit {
         });
     }
 
-    parseDate(input, format?) {
-      format = format || 'mm/dd/yyyy'; // default format
-      var parts = input.match(/(\d+)/g), 
-      i = 0, fmt = {};
-      // extract date-part indexes from the format
-      format.replace(/(yyyy|dd|mm)/g, function(part) {
-         console.table(fmt);
-         fmt[part] = i++; 
-        });
-
-      return new Date(parts[fmt['yyyy']], parts[fmt['mm']]-1, parts[fmt['dd']]);
-    }
 
 }
